@@ -1,0 +1,26 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Percuro.ViewModels"
+             x:Class="Percuro.Views.LoginView"
+             x:DataType="vm:LoginViewModel">
+
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+        <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" />
+       <!--username-->
+        <TextBox Watermark="Benutzername" Text="{Binding Username}"/>
+        <!--password-->
+        <TextBox Watermark="Passwort" Text="{Binding Password}" PasswordChar="*"/>
+         <!--role select-->
+        <ComboBox ItemsSource="{Binding AvailableRoles}"
+                   SelectedItem="{Binding SelectedRole}"
+        
+        />
+          <!--login button-->
+        <Button Content="Anmelden" Command="{Binding LoginCommand}"/>
+         <!--create account button--> 
+         <Button Content="Create Account" Command="{Binding CreateAccountCommand}"/>
+    </StackPanel>
+
+    
+</UserControl>

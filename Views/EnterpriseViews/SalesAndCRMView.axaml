@@ -1,0 +1,12 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:vm="clr-namespace:Percuro.ViewModels.EnterpriseViewModels"                 
+             x:Class="Percuro.Views.EnterpriseViews.SalesAndCRMView"
+             x:DataType="vm:SalesAndCRMViewModel">
+    <Grid>
+        <StackPanel>
+            <Button Content="Customer Management" Command="{Binding ToCustomerManagementView}" />
+            <Button Content="Sales Management" Command="{Binding ToSalesManagementView}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

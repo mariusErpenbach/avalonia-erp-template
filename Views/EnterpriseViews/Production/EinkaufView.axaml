@@ -1,0 +1,9 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Percuro.Views.EnterpriseViews.Production.EinkaufView">
+
+    <Grid>
+        <!-- UI for EinkaufView -->
+        <TextBlock Text="This is the Einkauf View" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Grid>
+</UserControl>

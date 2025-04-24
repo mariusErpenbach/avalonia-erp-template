@@ -1,0 +1,14 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:Percuro.ViewModels.EnterpriseViewModels"
+             x:Class="Percuro.Views.EnterpriseViews.AnalyticsView"
+             x:DataType="vm:AnalyticsViewModel">
+
+    <Grid>
+        <StackPanel>
+            <Button Content="To Analysen View" Command="{Binding ToAnalysenViewCommand}" />
+            <Button Content="To Reports View" Command="{Binding ToReportsViewCommand}" />
+            <Button Content="To Statistiken View" Command="{Binding ToStatistikenViewCommand}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

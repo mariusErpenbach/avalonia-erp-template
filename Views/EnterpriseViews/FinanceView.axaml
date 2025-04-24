@@ -1,0 +1,16 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Percuro.ViewModels.EnterpriseViewModels"
+             x:Class="Percuro.Views.EnterpriseViews.FinanceView"
+             x:DataType="vm:FinanceViewModel">
+
+    <Grid>
+        <!-- Navigation buttons -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Bilanz" Command="{Binding ToBilanzView}"/>
+            <Button Content="Buchhaltung" Command="{Binding ToBuchhaltungView}"/>
+            <Button Content="Budget Planning" Command="{Binding ToBudgetPlanningView}"/>
+            <Button Content="Rechnungen" Command="{Binding ToRechnungenView}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

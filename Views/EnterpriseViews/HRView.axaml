@@ -1,0 +1,16 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:Percuro.ViewModels.EnterpriseViewModels"
+             x:Class="Percuro.Views.EnterpriseViews.HRView"
+             x:DataType="vm:HRViewModel"
+             >
+
+    <Grid>
+        <StackPanel>
+            <Button Content="Arbeitszeit" Command="{Binding ToArbeitszeitViewCommand}" />
+            <Button Content="Gehaltsabrechnung" Command="{Binding ToGehaltsabrechnungViewCommand}" />
+            <Button Content="Mitarbeiter" Command="{Binding ToMitarbeiterViewCommand}" />
+            <Button Content="Recruiting" Command="{Binding ToRecruitingViewCommand}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

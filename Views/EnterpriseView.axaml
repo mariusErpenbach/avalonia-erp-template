@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Percuro.ViewModels"
+             x:Class="Percuro.Views.EnterpriseView"
+             x:DataType="vm:EnterpriseViewModel">
+
+    <Grid>
+        <!-- Existing content -->
+        <TextBlock Text="hello Enterprise"/>
+
+        <!-- New buttons for navigation -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Finance" Command="{Binding ToFinanceView}"/>
+            <Button Content="HR" Command="{Binding ToHRView}"/>
+            <Button Content="Production" Command="{Binding ToProductionView}"/>
+            <Button Content="Sales and CRM" Command="{Binding ToSalesAndCRMView}"/>
+            <Button Content="Analytics" Command="{Binding ToAnalyticsView}"/>
+        </StackPanel>
+    </Grid>
+
+</UserControl>

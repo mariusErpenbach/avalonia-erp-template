@@ -1,0 +1,12 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Percuro.ViewModels"
+        x:Class="Percuro.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="Percuro"
+        Width="800" Height="600">
+    
+    <ContentControl Content="{Binding CurrentViewModel}"
+                   HorizontalContentAlignment="Stretch"
+                   VerticalContentAlignment="Stretch"/>
+</Window>

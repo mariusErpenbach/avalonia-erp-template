@@ -1,0 +1,6 @@
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="Percuro.Views.EnterpriseViews.SalesAndCRM.SalesManagementView">
+    <Grid>
+        <TextBlock Text="Sales Management View" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+
+    </Grid>
+</UserControl>

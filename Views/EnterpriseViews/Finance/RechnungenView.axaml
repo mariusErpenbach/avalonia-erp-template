@@ -1,0 +1,10 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Percuro.Views.EnterpriseViews.Finance.RechnungenView">
+    <Grid>
+        <TextBlock Text="Rechnungen View" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   FontSize="20" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,14 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:Percuro.ViewModels.EnterpriseViewModels"
+             x:Class="Percuro.Views.EnterpriseViews.ProductionView"
+             x:DataType="vm:ProductionViewModel">
+
+    <Grid>
+        <StackPanel>
+            <Button Content="Inventory" Command="{Binding ToInventoryViewCommand}" />
+            <Button Content="Einkauf" Command="{Binding ToEinkaufViewCommand}" />
+            <Button Content="Produktionsplanung" Command="{Binding ToProduktionsPlanungViewCommand}" />
+        </StackPanel>
+    </Grid>
+</UserControl>
